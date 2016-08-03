@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Maggie Lu </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="resumepage.css">
+    
+<!-- open graph markup -->
+<meta property="og:url"           content="gallery.html" />
+<meta property="og:type"          content="website" />
+<meta property="og:title"         content="Maggie's Page" />
+<meta property="og:description"   content="My gallery" />
+<meta property="og:image"         content="https://www.dramafever.com/st/news/images/4sehun.png" />
+
+</head>
+
+<body>
+<!-- Facebook JavaScript SDK -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+    
+<!-- Navbar -->
+
+<!-- use CSS & HTML only <div class="navbar">-->
+
+<ul id="nb_ul">
+    <li><a id="nb_1" href="index.html"><span> LH </span></a></li>
+</ul>
+
+<p id="gly"><img id="ti"src="plane.png"> My Gallery <img id="ti" src="piao.png"></p>
+<div class="earth" id="earth">
+    <img src="earth.png">
+</div>
+<!--
+<div class="gif_bg" id="L">L</div>
+<div class="gif_bg" id="H">H</div>
+--> 
+    
+<div class="gallery">
+    <!-- Facebook Share -->
+    <!--
+    <div class="fb-share-button" data-href="http://127.0.0.1:60012/gallery.html" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2F127.0.0.1%3A60012%2Fgallery.html&amp;src=sdkpreparse">Share</a></div>
+    -->
+
+    <!-- Facebook Like & Share -->
+    <div class="fb-like but-fb" data-href="http://127.0.0.1:60012/gallery.html" data-layout="button" data-action="like" data-size="large" data-show-faces="false" data-share="true"></div>
+    
+    
+    <div class="container">
+        <div class="photo" id="p1">
+            <img src="gallery-ps/1.jpg">
+        </div>
+        <div class="photo" id="p2">
+            <span class="but_pn" id="pre_bt"> ❮ </span>
+            <img src="gallery-ps/01.jpg">
+            <span class="but_pn" id="nxt_bt"> ❯ </span>
+        </div>
+        <div class="photo" id="p3">
+            <img src="gallery-ps/2.jpg">
+        </div>
+    </div>
+</div>
+
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="gallery.js"></script>
+   
+</body>
+    
+
+</html>

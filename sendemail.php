@@ -1,4 +1,5 @@
 <?php
+/*
      require_once 'Mail.php';
      function send_mail($recipient,$subject,$body){
 
@@ -22,7 +23,8 @@
             );  
             $smtp->send($recipient, $headers, $body);
        }
-/*
+*/
+
 $to = "bluehyemaggie@gmail.com";
 $subject = "Message From ResumePage";
 $name_field = $_POST['name'];
@@ -43,5 +45,5 @@ if ($send){
 } else {
     echo "Opps! Something is wrong~";
 }
-*/
+
 ?>

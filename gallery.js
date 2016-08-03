@@ -18,8 +18,7 @@ $(document).ready(function(){
         });
     });
     
-    var img_list = ["1.jpg", "01.jpg", "2.jpg", "02.jpg", "3.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg",
-    "11.jpg", "12.jpg"];
+    var img_list = ["1.jpg", "01.jpg", "2.jpg", "02.jpg", "3.jpg", "03.jpg", "4.jpg", "5.jpg", "6.jpg", "7.jpg", "8.jpg", "9.jpg", "10.jpg"];
     
     // next pic
     $("#nxt_bt").click(function(){

@@ -1,7 +1,124 @@
 <!DOCTYPE html>
 <html>
+<head>
+<title> Maggie Lu </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="resumepage.css">
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<!-- Navbar -->
+
+<!-- use CSS & HTML only <div class="navbar">-->
+
+<ul id="nb_ul">
+    <li><a id="nb_1" href="#home"><span> LH </span></a></li>
+    <li><a id="nb_a" href="#about"><span> About </span> </a></li>
+    <li><a id="nb_a" href="#contact"><span> Contact </span></a></li>
+    <li><a id="nb_a" href="#message"><span> Message </span></a></li>
+    <!--
+    <li><a class="glyphicon glyphicon-search" id="nb_a" href="#search"></a>
+    -->
+    </li> <!-- use Bootstrap search icon-->
+</ul>
+    
+<div class="fixed-bg1 container1" id="home">
+    <p>I'm Hui Lu . W e l c o m e </p>
+</div>
+
+<div class="about" id="about"> 
+    <h1> About Me </h1>
+    <hr>
+    <div class="imgs">
+        <ul id="img_list">
+            <li><!--<a href="HUI%20LU%2002.pdf" target="_blank"> --><img src="SocialMediaLogo/resume.png" alt="resume" id="r_logo"><span id="ab1"> I am Hui Lu from China. Want to check my resume ? </span> </li>
+            <br>
+            
+            <li><span id="ab2"> I love travel. Canada, USA, Cuba... Want to see my gallery ? </span><a href="gallery.html"><img src="SocialMediaLogo/zhaopian.png" alt="other"></a></li>
+        </ul>
+    </div>
+</div>
+    
+<div id="resume" class="resume_bg">
+    <span class="close_but">X</span>
+    <img src="HUILU.jpg" alt="resume image" class="full_resume" id="f_resume">
+</div>
+ 
+
+<div class="fixed-bg2 container1">
+    <p> C o n t a c t</p>
+</div>
+
+<div class="about" id="contact">
+<h1> Find Me on Social Media</h1>
+<hr>
+    <div class="social">
+        <a href="https://ca.linkedin.com/in/hui-maggie-lu-036a6387"><img id="media" src="SocialMediaLogo/LinkedIn_logo.png" alt="linkedin"></a>
+        <a href="https://github.com/MaggieLu"><img id="media" src="SocialMediaLogo/mark-github.png" alt="github"></a>
+        <a href="https://www.facebook.com/maggiehye"><img id="media" src="SocialMediaLogo/fb-art.jpg" alt="facebook"></a>
+        <a href="mailto:hui.lu@mail.utoronto.ca"><img id="media" src="SocialMediaLogo/gmail.png" alt="google"></a>
+    </div>
+</div>
+    
+<div class="fixed-bg3 container1">
+    <p> OR </p>
+</div>
+
+<div class="about" id="message">
+    <div class="dong">
+        <div class="ball" id="b1"></div>
+        <div class="ball" id="b2"></div>
+        <div class="ball" id="b3"></div>
+        <div class="ball" id="b4"></div>
+        <div class="ball" id="b5"></div>
+        <div class="ball" id="b6"></div>
+        <div class="ball" id="b7"></div>
+    </div>
+    
+    <h1> Leave a message to Me </h1>
+    <center>
+        <form method="POST" action="sendemail.php">
+            <div>
+                <input type="text" name="name" placeholder="Name">
+                <br>
+                <input type="email" name="email" placeholder="Email">
+                <br>
+                <textarea rows="12", cols="45" name="message"></textarea>
+                <br>
+            </div>
+            <button type="submit" value="send" name="submit"> Send </button>
+        </form>
+    </center>
+</div>
+    
+<!-- footer -->
+<!--    
+<footer>
+    <a href="mailto:hui.lu@mail.utoronto.ca"><p> <span class="glyphicon glyphicon-envelope"></span>: hui.lu@mail.utoronto.ca</p></a>
+    <a href="https://github.com/MaggieLu">
+        <p> 
+            <span class="fa-stack">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+            </span>: https://github.com/MaggieLu
+        </p>
+    </a>
+    <p> 
+        <span class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-wechat fa-stack-1x fa-inverse"></i>
+        </span>: LH_Maggie
+    </p>
+</footer>
+-->
+<!-- js -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="homepage.js"></script>
+    
 </body>
+
 </html>

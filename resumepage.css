@@ -7,7 +7,7 @@ body {
 }
 
 /* font */
-.container1, .about h1 {
+.container1, .about p {
 	font-family: "MTF Toast", Colonna MT, sans-serif;
 }
 
@@ -105,7 +105,7 @@ body {
     min-height: 500px;
     padding: 10px;
 }
-.about p{
+.about p {
     text-align: center;
     padding: 30px;
     font-size: 48px;
@@ -124,7 +124,39 @@ body {
 }
 
 /* list imgs  other way to center image list?*/
+.imgs {
+	margin: 30px;
+	text-align: center;
+}
+.rs, 
+.is {
+	margin: 20px;
+	width: 100%;
+	height: auto;
+	border-radius: 20%;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+	vertical-align: middle;
+	font-size: 24px;
+	
+	
+}
 
+.rs img,
+.is img {
+	width: 20%;
+	height: auto;
+	margin: 0 15px;
+	border: solid thin 50% medium #FFFFFF;
+	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.rs img:hover, .rs img:focus, .rs img:active,
+.is img:hover, .is img:focus, .is img:active {
+	border: solid thin 50% thick #FE5F55;
+    	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+/*
 .imgs{
     text-align: center;
 }
@@ -134,11 +166,9 @@ body {
 }
 
 #img_list li{
-    /* display: inline-block; */
+    display: inline-block; 
     margin: 30px 30px;
     height: auto;
-    margin: 20px;
-    text-align: center;
     border-radius: 20%;
     border-style: solid;
     border-width: thick;
@@ -157,6 +187,7 @@ body {
 
 .is {
 	width = 100%;
+	display: inline-block;
 }
 
 .i {
@@ -191,6 +222,8 @@ body {
 #ab2 {
     font-size: 22px;
 }
+
+*/
 
 /* Resume Display*/
 

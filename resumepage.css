@@ -3,11 +3,10 @@ body {
 	background-image: url("light_cloud_img.jpg");*/
 	background-color: #FFFFFF;
 	background-repeat: no-repeat;
-	margin: 0;
 }
 
 /* font */
-.container1, .about p {
+.container1, .about h1 {
 	font-family: "MTF Toast", Colonna MT, sans-serif;
 }
 
@@ -15,20 +14,18 @@ body {
 
 #nb_ul {
     background-color: #FE5F55;
-    list-style-type: none;
+	list-style-type: none;
+	padding: 0;
     position: fixed;
-    padding: 0;
-    margin-top:0;
+    z-index: 10;
     top: 0;
     width: 100%;
     display: block; 
-    z-index: 10;
 }
 
 #nb_ul li {
-    float: left;
-    margin: 1px 15px;
-    width: 50px;
+	float: left;
+	margin-left: 15px;
     border: solid thin #FE5F55;
 }
 
@@ -105,10 +102,9 @@ body {
     min-height: 500px;
     padding: 10px;
 }
-.about p {
+.about h1{
     text-align: center;
     padding: 30px;
-    font-size: 48px;
 
 }
 
@@ -124,39 +120,7 @@ body {
 }
 
 /* list imgs  other way to center image list?*/
-.imgs {
-	margin: 30px;
-	text-align: center;
-}
-.rs, 
-.is {
-	margin: 20px;
-	width: 100%;
-	height: auto;
-	border-radius: 20%;
-	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-	vertical-align: middle;
-	font-size: 24px;
-	
-	
-}
 
-.rs img,
-.is img {
-	width: 20%;
-	height: auto;
-	margin: 0 15px;
-	border: solid thin 50% medium #FFFFFF;
-	box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-.rs img:hover, .rs img:focus, .rs img:active,
-.is img:hover, .is img:focus, .is img:active {
-	border: solid thin 50% thick #FE5F55;
-    	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-}
-
-/*
 .imgs{
     text-align: center;
 }
@@ -166,9 +130,11 @@ body {
 }
 
 #img_list li{
-    display: inline-block; 
+    /* display: inline-block; */
     margin: 30px 30px;
     height: auto;
+    margin: 20px;
+    text-align: center;
     border-radius: 20%;
     border-style: solid;
     border-width: thick;
@@ -176,28 +142,16 @@ body {
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.is div img:hover,
-.is div img:focus,
-.is div img:active{
+#img_list li img:hover,
+#img_list li img:focus,
+#img_list li img:active{
     border-style: solid;
     border-width: thick;
     border-color: #FE5F55;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
-.is {
-	width = 100%;
-	display: inline-block;
-}
-
-.i {
-	width = 20%;
-}
-
-.s {
-	width = 80%;
-}
-.i img{
+.imgs img{
     width: 20%;
     height: auto;
     border-color: #FE5F55;
@@ -222,8 +176,6 @@ body {
 #ab2 {
     font-size: 22px;
 }
-
-*/
 
 /* Resume Display*/
 

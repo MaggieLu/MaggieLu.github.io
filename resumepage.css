@@ -3,6 +3,7 @@ body {
 	background-image: url("light_cloud_img.jpg");*/
 	background-color: #FFFFFF;
 	background-repeat: no-repeat;
+	margin: 0;
 }
 
 /* font */
@@ -14,18 +15,20 @@ body {
 
 #nb_ul {
     background-color: #FE5F55;
-	list-style-type: none;
-	padding: 0;
+    list-style-type: none;
     position: fixed;
-    z-index: 10;
+    padding: 0;
+    margin-top:0;
     top: 0;
     width: 100%;
     display: block; 
+    z-index: 10;
 }
 
 #nb_ul li {
-	float: left;
-	margin-left: 15px;
+    float: left;
+    /* margin-left: 15px; */
+    width: 10%;
     border: solid thin #FE5F55;
 }
 

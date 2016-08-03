@@ -37,12 +37,12 @@ $(document).ready(function(){
         
         for (j = 0; j < new_index_list.length; j++) {
             $.each(img_list, function(i, title){
-                if ((p_list[] == title) && (i == img_list.length-1)) {
+                if ((p_list[j] == title) && (i == 12)) {
                     new_index_list[j] = 0;
                 };
-                if ((p_list[] == title) && (i != img_list.length-1)) {
+                if ((p_list[j] == title) && (i != 12)) {
                     new_index_list[j] = i + 1;
-                }
+                };
             });
         };
         
@@ -114,14 +114,14 @@ $(document).ready(function(){
         
         var new_index_list = [0, 0, 0];
         
-              for (j = 0; j < new_index_list.length; j++) {
+        for (j = 0; j < new_index_list.length; j++) {
             $.each(img_list, function(i, title){
-                if ((p_list[] == title) && (i == 0)) {
+                if ((p_list[j] == title) && (i == 0)) {
                     new_index_list[j] = img_list.length - 1;
                 };
-                if ((p_list[] == title) && (i != 0)) {
+                if ((p_list[j] == title) && (i != 0)) {
                     new_index_list[j] = i - 1;
-                }
+                };
             });
         };
         

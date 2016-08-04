@@ -389,8 +389,6 @@ div .container {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
-
-
 /* previous & next photo button */
 
 .but_pn {
@@ -430,6 +428,8 @@ div .container {
     padding-top: 75px;
     padding-bottom: 15px;
     width: 100%;
+    color: white;
+    background-color: rgba(250, 250, 250, 0.5);
     display: inline-block; 
     position: relative;
     z-index: 1;
@@ -454,6 +454,9 @@ div .container {
     0% {transform: translate(5px, 5px)};
     100% {transform: translate(-10px, -10px)};
 }
+
+/* set background img as earth */
+
 
 .earth {
     width: 100%;
@@ -486,6 +489,7 @@ div .container {
     -moz-animation: roll 120s infinite linear;
 
 }
+
 
 @keyframes roll {
     0% {transform: rotate(0)};
@@ -704,6 +708,7 @@ footer p {
     #gly {
         font-size: 32px;
     }
+
     .social img {
         position: relative;
         width: 45%;
@@ -748,8 +753,10 @@ footer p {
         max-width: 450px;
     }
 
+    .earth {
+        display: none !important;
+    }
 
-    /* gallery */
     #p1 {
         width: 10%;
         overflow: hidden;

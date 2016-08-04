@@ -675,7 +675,7 @@ footer p {
 
 /* some features on mobile view */
 
-@media screen and (max-width: 536px) {
+@media(max-width: 536px) {
 
     /* each section in index.html */
 

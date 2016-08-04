@@ -6,7 +6,7 @@ body {
 }
 
 /* font */
-.container1, .about h1, #gly {
+.container1 p, .about h1, #gly {
     font-family: "MTF Toast", Impact, Charcoal, sans-serif;
 }
 
@@ -678,8 +678,12 @@ footer p {
     .container1, .about h1, #gly {
 	    font-family: "MTF Toast", Impact, Charcoal, sans-serif;
     }
-	
-     #nb_1, #ab1, #ab2 {
+    
+    #nb_1 {
+    	font-family: "MTF Gridie", Colonna MT, Charcoal, sans-serif;;
+    	
+    }
+      #ab1, #ab2 {
         font-family: "Times New Roman", Times, serif;
      }
      

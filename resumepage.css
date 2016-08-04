@@ -106,8 +106,8 @@ button {
     background-color: #000000;
     color: #FFFFFF;
     padding: 3px 12px;
-    transform: translate(-50%, -50%)
-    -webkit-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
 }
 
 /* about */

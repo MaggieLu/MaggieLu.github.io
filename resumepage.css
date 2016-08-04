@@ -675,9 +675,14 @@ footer p {
 @media screen and (max-width: 536px) {
 
     /* each section in index.html */
-    .container1, .about h1, #gly, #nb_1, #ab1, #ab2 {
-        font-family: "Times New Roman", Times, serif;
+    .container1, .about h1, #gly {
+	    font-family: "MTF Toast", Impact, Charcoal, sans-serif;
     }
+	
+     #nb_1, #ab1, #ab2 {
+        font-family: "Times New Roman", Times, serif;
+     }
+     
     .social img {
         position: relative;
         width: 45%;

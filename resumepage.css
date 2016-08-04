@@ -472,6 +472,7 @@ div .container {
     border-radius: 50%;
     overflow: hidden;
     transform-origin: 53.71% 58.69%;
+    -webkit-transform-origin: 53.71% 58.69%;
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
     animation: roll 120s infinite linear;
@@ -600,6 +601,7 @@ footer p {
     width: 80%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
     margin-top: -50px;
     z-index: -1;
 }

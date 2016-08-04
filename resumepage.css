@@ -11,18 +11,15 @@ body {
 }
 
 #nb_1 {
-    font-size: 14pt;
     font-family: "MTF Gridie", Colonna MT, Impact, Charcoal, sans-serif;
 }
 
 #ab1,
 #ab2 {
     font-family: "Times New Roman", Times, serif;
-    font-size: 24px;
 }
 
 button {
-    font-size: 16px;
     font-family: Arial, sans-serif;
 }
 
@@ -674,7 +671,13 @@ footer p {
 /* animation */
 
 /* some features on mobile view */
-@media screen and (max-width: 536px){
+
+@media screen and (max-width: 536px) {
+
+    /* each section in index.html */
+    .container1, .about h1, #gly, #nb_1, #ab1, #ab2 {
+        font-family: "Times New Roman", Times, serif;
+    }
     .social img {
         position: relative;
         width: 45%;
@@ -701,7 +704,7 @@ footer p {
     }
     #ab1,
     #ab2 {
-        font-size: 24px;
+        font-size: 16px;
     } 
 
     .container1 p {
@@ -742,5 +745,6 @@ footer p {
     div .container {
         max-height: 600px;
     }
+
 }
 

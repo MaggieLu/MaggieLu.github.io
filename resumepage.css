@@ -157,7 +157,7 @@ body {
     border-style: solid;
     border-radius: 50%;
     border-width: medium;
-    margin: 10px 10px;
+    margin: 10px 15px;
     border-color: #FFFFFF;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
@@ -377,8 +377,6 @@ div .container {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
-
-
 /* previous & next photo button */
 
 .but_pn {
@@ -576,7 +574,6 @@ footer p {
 .but-fb {
     margin: 20px;
 }
-
 
 /* Try ball animation on homepage */
 .dong {

@@ -674,11 +674,7 @@ footer p {
 /* animation */
 
 /* some features on mobile view */
-
-@media(max-width: 536px) {
-
-    /* each section in index.html */
-
+@media screen and (max-width: 536px){
     .social img {
         position: relative;
         width: 45%;

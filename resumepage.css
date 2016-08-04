@@ -7,7 +7,7 @@ body {
 
 /* font */
 .container1, .about h1 {
-	font-family: "MTF Toast", Colonna MT, sans-serif;
+	font-family: "MTF Toast", Impact, Charcoal, sans-serif;
 }
 
 /* Navbar use CSS and HTML only #88cc00 */
@@ -50,7 +50,7 @@ body {
 	text-align: center;
 	padding: 15px 10px;
 	font-size: 14pt;
-    font-family: "MTF Gridie", Colonna MT, sans-serif;
+    font-family: "MTF Gridie", Colonna MT, Impact, Charcoal, sans-serif;
     color: #FFFFFF;
 }
 
@@ -105,6 +105,7 @@ body {
 .about h1{
     text-align: center;
     padding: 30px;
+    font-size: 48px;
 
 }
 
@@ -131,9 +132,7 @@ body {
 
 #img_list li{
     /* display: inline-block; */
-    margin: 30px 30px;
     height: auto;
-    margin: 20px;
     text-align: center;
     border-radius: 20%;
     border-style: solid;
@@ -158,23 +157,22 @@ body {
     border-style: solid;
     border-radius: 50%;
     border-width: medium;
-    margin-left: 15px;
-    margin-right: 15px;
+    margin: 10px 10px;
     border-color: #FFFFFF;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
 #ab1,
 #ab2 {
-    font-family:  Comic Sans MS, sans-serif;
+    font-family: Verdana, Geneva, sans-serif
 }
 
 #ab1 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 #ab2 {
-    font-size: 22px;
+    font-size: 19px;
 }
 
 /* Resume Display*/
@@ -231,16 +229,17 @@ body {
 }
 
 .social img {
-    width: 18%;
+    position: relative;
+    width: 16%;
     height: auto;
     border-radius: 50%;
-    margin: 20px;
-    margin-top: 30px;
+    margin: 4%;
     border-style: solid;
     border-width: medium;
     border-color: #FFFFFF;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
+
 
 .social img:hover,
 .social img:focus,
@@ -420,16 +419,17 @@ div .container {
 
 
 #gly {
-    font-family: "MTF Toast", Arial, sans-serif;
+    font-family: "MTF Toast", Impact, Charcoal, sans-serif;
     font-size: 64px;
     text-align: center;
-    padding-top: 60px;
-    padding-bottom: 20px;
+    padding-top: 75px;
+    padding-bottom: 15px;
     width: 100%;
     display: inline-block; 
     position: relative;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.5);
+    /* background-color: rgba(255, 255, 255, 0.5); */
+    text-shadow: 0px 0px 1px rgba(64, 64, 64, 1);
 }
 
 #ti {
@@ -449,16 +449,18 @@ div .container {
     height: auto;
     position: absolute;
     top: 70%;
-    left: 55%;
+    left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
+    overflow: hidden;
     z-index: 0;
     
 }
 
 .earth img {
     width: 85%;
-    overflow-y: hidden;
+    border-radius: 50%;
+    overflow: hidden;
     transform-origin: 53.71% 58.69%;
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
@@ -663,7 +665,86 @@ footer p {
     0% {transform: translateY(650px)};
 }
 
-
-
 /* animation */
 
+/* some features on mobile view */
+
+@media only screen and (max-width: 536px) {
+
+    /* each section in index.html */
+
+    .social img {
+        position: relative;
+        width: 45%;
+        height: auto;
+        border-radius: 50%;
+        margin: 15px;
+        border-style: solid;
+        border-width: medium;
+        border-color: #FFFFFF;
+        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .social {
+        padding-bottom: 10px;
+    }
+
+    .about h1 {
+        font-size: 48px;
+        padding: 10px;
+    }
+
+    .about {
+        height: auto;
+    }
+
+    .container1 p {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin-right: -50%;
+        font-size: 36px;
+        background-color: #000000;
+        color: #FFFFFF;
+        padding: 3px 12px;
+        transform: translate(-50%, -50%)
+    }
+
+    .fixed-bg1, .fixed-bg2, .fixed-bg3 {
+        min-height: 600px;
+    }
+
+    #message{
+        margin: auto;
+        width: 80%;
+        max-width: 450px;
+    }
+
+
+    /* gallery */
+    #p1 {
+        width: 10%;
+        overflow: hidden;
+        height: 100%;
+        
+    }
+
+    #p2 {
+        width: 65%;
+        overflow: visible;
+        height: 100%;
+    }
+
+    #p3 {
+        width: 10%;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    div .container {
+
+        max-height: 600px;
+    }
+    
+}

@@ -6,8 +6,24 @@ body {
 }
 
 /* font */
-.container1, .about h1 {
-	font-family: "MTF Toast", Impact, Charcoal, sans-serif;
+.container1, .about h1, #gly {
+    font-family: "MTF Toast", Impact, Charcoal, sans-serif;
+}
+
+#nb_1 {
+    font-size: 14pt;
+    font-family: "MTF Gridie", Colonna MT, Impact, Charcoal, sans-serif;
+}
+
+#ab1,
+#ab2 {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+}
+
+button {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
 }
 
 /* Navbar use CSS and HTML only #88cc00 */
@@ -50,7 +66,6 @@ body {
 	text-align: center;
 	padding: 15px 10px;
 	font-size: 14pt;
-    font-family: "MTF Gridie", Colonna MT, Impact, Charcoal, sans-serif;
     color: #FFFFFF;
 }
 
@@ -164,7 +179,6 @@ body {
 
 #ab1,
 #ab2 {
-    font-family: Verdana, Geneva, sans-serif;
     font-size: 24px;
 }
 
@@ -277,7 +291,6 @@ button {
     color: #FFFFFF;
     font-size: 16px;
     margin-bottom: 20px;
-    font-family: Arial, sans-serif;
 }
 
 button:hover,
@@ -377,6 +390,8 @@ div .container {
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 
+
+
 /* previous & next photo button */
 
 .but_pn {
@@ -411,7 +426,6 @@ div .container {
 
 
 #gly {
-    font-family: "MTF Toast", Impact, Charcoal, sans-serif;
     font-size: 64px;
     text-align: center;
     padding-top: 75px;
@@ -575,6 +589,7 @@ footer p {
     margin: 20px;
 }
 
+
 /* Try ball animation on homepage */
 .dong {
     position: absolute;
@@ -681,25 +696,21 @@ footer p {
     }
 
     .about h1 {
-        font-size: 48px;
+        font-size: 24px;
         padding: 10px;
     }
 
     .about {
         height: auto;
     }
+    #ab1,
+    #ab2 {
+        font-size: 24px;
+    } 
 
     .container1 p {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        font-size: 36px;
-        background-color: #000000;
-        color: #FFFFFF;
+        font-size: 24px;
         padding: 3px 12px;
-        transform: translate(-50%, -50%)
     }
 
     .fixed-bg1, .fixed-bg2, .fixed-bg3 {
@@ -718,7 +729,6 @@ footer p {
         width: 10%;
         overflow: hidden;
         height: 100%;
-        
     }
 
     #p2 {
@@ -734,8 +744,7 @@ footer p {
     }
 
     div .container {
-
         max-height: 600px;
     }
-    
 }
+

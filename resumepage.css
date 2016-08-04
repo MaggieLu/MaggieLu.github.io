@@ -164,16 +164,10 @@ body {
 
 #ab1,
 #ab2 {
-    font-family: Verdana, Geneva, sans-serif
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 24px;
 }
 
-#ab1 {
-    font-size: 20px;
-}
-
-#ab2 {
-    font-size: 19px;
-}
 
 /* Resume Display*/
 

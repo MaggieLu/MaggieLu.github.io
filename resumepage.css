@@ -108,6 +108,7 @@ button {
     padding: 3px 12px;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
 }
 
 /* about */
@@ -440,6 +441,7 @@ div .container {
     width: 10%;
     height: auto;
     animation: yao 2s infinite alternate ease-in-out;
+    -moz-animation: yao 2s infinite alternate ease-in-out;
     -webkit-animation: yao 2s infinite alternate ease-in-out;
 }
 
@@ -462,6 +464,7 @@ div .container {
     margin-right: -50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
     overflow: hidden;
     z-index: 0;
     
@@ -473,10 +476,14 @@ div .container {
     overflow: hidden;
     transform-origin: 53.71% 58.69%;
     -webkit-transform-origin: 53.71% 58.69%;
+    -moz-transform-origin: 53.71% 58.69%;
+
     transform: rotate(360deg);
     -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
     animation: roll 120s infinite linear;
     -webkit-animation: roll 120s infinite linear;
+    -moz-animation: roll 120s infinite linear;
 
 }
 
@@ -488,6 +495,11 @@ div .container {
 @-webkit-keyframes roll {
     0% {transform: rotate(0)};
     100% {transform: rotateX(360deg)};
+}
+
+@-moz-keyframes roll {
+    0% {transform: rotate(0)};
+    100% {transform: rotate(360deg)};
 }
 
 /* footer */
@@ -602,6 +614,7 @@ footer p {
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
     margin-top: -50px;
     z-index: -1;
 }
@@ -686,6 +699,10 @@ footer p {
     /* each section in index.html */
     .container1, .about h1, #gly, #nb_1, #ab1, #ab2 {
         font-family: "Times New Roman", Times, serif;
+    }
+
+    #gly {
+        font-size: 32px;
     }
     .social img {
         position: relative;

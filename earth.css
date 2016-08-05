@@ -1,0 +1,52 @@
+.earth {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    overflow: hidden;
+    z-index: 0; 
+}
+
+@media screen and (max-width: 500px) {
+    .earth {
+        top: 50%;
+        left: 50%;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.earth img {
+    width: 85%;
+    border-radius: 50%;
+    overflow: hidden;
+    transform-origin: 53.71% 58.69%;
+    -webkit-transform-origin: 53.71% 58.69%;
+
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    animation: roll 120s infinite linear;
+    -webkit-animation: roll 120s infinite linear;
+    -moz-animation: roll 120s infinite linear;
+}
+
+
+@keyframes roll {
+    0% {transform: rotate(0)};
+    100% {transform: rotate(360deg)};
+}
+
+@-webkit-keyframes roll {
+    0% {transform: rotate(0)};
+    100% {transform: rotateX(360deg)};
+}
+
+@-moz-keyframes roll {
+    0% {transform: rotate(0)};
+    100% {transform: rotate(360deg)};
+}

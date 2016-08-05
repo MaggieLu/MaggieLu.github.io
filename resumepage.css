@@ -2,12 +2,17 @@ body {
 	/*background-image: url("light_cloud_img.jpg");  #EEF5DB
 	background-image: url("light_cloud_img.jpg");*/
 	background-color: #FFFFFF;
-	background-repeat: no-repeat;
 }
 
 /* font */
-.container1, .about h1, #gly {
+.container1, .about p, #gly {
     font-family: "MTF Toast", Impact, Charcoal, sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+    .container1, #gly, #nb_1, #ab1, #ab2 {
+        font-family: Impact, "Times New Roman", Times, serif;
+    }
 }
 
 #nb_1 {
@@ -97,6 +102,7 @@ button {
 
 /* intro */
 .container1 p {
+    text-align: center;
     margin: 0;
     position: absolute;
     top: 50%;
@@ -111,16 +117,32 @@ button {
     -moz-transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 500px) {
+    .container1 p {
+        font-size: 36px;
+        padding: 3px 12px;
+        text-align: center;
+    }
+}
+
 /* about */
 .about{
     min-height: 500px;
     padding: 10px;
 }
-.about h1{
+
+.about p{
     text-align: center;
     padding: 30px;
-    font-size: 48px;
+    font-size: 42px;
+}
 
+@media screen and (max-width:500px) {
+    .about p {
+        font-size: 36px;
+        /* color: pink; */
+        font-family: Impact, "Times New Roman", Times, serif;
+    }
 }
 
 /* fixed background 2 for contact */
@@ -132,6 +154,12 @@ button {
     min-height: 500px;
     background-size: cover;
     max-width: 100%;
+}
+
+@media screen and (max-width: 500px) {
+    .fixed-bg1, .fixed-bg2, .fixed-bg3 {
+        max-height: 600px;
+    }
 }
 
 /* list imgs  other way to center image list?*/
@@ -148,6 +176,7 @@ button {
     /* display: inline-block; */
     height: auto;
     text-align: center;
+    padding: 15px;
     border-radius: 20%;
     border-style: solid;
     border-width: thick;
@@ -176,9 +205,24 @@ button {
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 500px) {
+    .imgs img {
+        display: block;
+        width: 45%;
+        margin-left: 25%;
+    }
+}
+
 #ab1,
 #ab2 {
     font-size: 24px;
+}
+
+@media screen and (max-width: 500px) {
+    #ab1,
+    #ab2 {
+        font-size: 16px;
+    } 
 }
 
 
@@ -229,7 +273,6 @@ button {
 }
 
 /* Social media Section*/
-
 .social {
     text-align: center;
     width: 100%;
@@ -247,6 +290,17 @@ button {
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
 }
 
+@media screen and (max-width: 500px) {
+    .social img{
+        width: 45%; 
+        margin: 15px;
+    }
+
+    .social {
+        padding-bottom: 10px;
+        display: block;
+    }
+} 
 
 .social img:hover,
 .social img:focus,
@@ -273,6 +327,14 @@ button {
     margin: auto;
     width: 60%;
     max-width: 450px;
+}
+
+@media screen and (max-width: 500px) {
+    #message{
+        margin: auto;
+        width: 80%;
+        max-width: 450px;
+    }
 }
 
 #message input,
@@ -339,6 +401,12 @@ div .container {
     margin-bottom: 30px;
 }
 
+@media screen and (max-width: 500px) {
+    div .container {
+        max-height: 600px;
+    }
+}
+
 .photo {
     display: inline-block;
     vertical-align: middle;
@@ -365,6 +433,26 @@ div .container {
     overflow: hidden;
     height: 100%;
     
+}
+
+@media screen and (max-width: 500px) {
+    #p1 {
+        width: 10%;
+        overflow: hidden;
+        height: 100%;
+    }
+
+    #p2 {
+        width: 65%;
+        overflow: visible;
+        height: 100%;
+    }
+
+    #p3 {
+        width: 10%;
+        overflow: hidden;
+        height: 100%;
+    }
 }
 
 #p1, #p2, #p3 {
@@ -428,12 +516,17 @@ div .container {
     padding-top: 75px;
     padding-bottom: 15px;
     width: 100%;
-    background-color: rgba(250, 250, 250, 0.5);
     display: inline-block; 
     position: relative;
     z-index: 1;
     /* background-color: rgba(255, 255, 255, 0.5); */
     text-shadow: 0px 0px 1px rgba(64, 64, 64, 1);
+}
+
+@media screen and (max-width:500px) {
+    #gly {
+        font-size: 32px;
+    }
 }
 
 #ti {
@@ -454,72 +547,7 @@ div .container {
     100% {transform: translate(-10px, -10px)};
 }
 
-/* set background img as earth */
-
-
-.earth {
-    width: 100%;
-    height: auto;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
-    overflow: hidden;
-    z-index: 0;
-    
-}
-
-.earth img {
-    width: 85%;
-    border-radius: 50%;
-    overflow: hidden;
-    transform-origin: 53.71% 58.69%;
-    -webkit-transform-origin: 53.71% 58.69%;
-    -moz-transform-origin: 53.71% 58.69%;
-
-    transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    animation: roll 120s infinite linear;
-    -webkit-animation: roll 120s infinite linear;
-    -moz-animation: roll 120s infinite linear;
-
-}
-
-
-@keyframes roll {
-    0% {transform: rotate(0)};
-    100% {transform: rotate(360deg)};
-}
-
-@-webkit-keyframes roll {
-    0% {transform: rotate(0)};
-    100% {transform: rotateX(360deg)};
-}
-
-@-moz-keyframes roll {
-    0% {transform: rotate(0)};
-    100% {transform: rotate(360deg)};
-}
-
-/* footer */
-footer {
-    text-align: center;
-}
-footer p {
-    margin: 10px;
-    color: #999999;
-    display:inline-block;
-}
-
 /* animations */
-/*
-.gif_bg {
-    width: 100%;
-}
 
 */
 /* L */
@@ -692,91 +720,3 @@ footer p {
 @-moz-keyframes drop {
     0% {transform: translateY(650px)};
 }
-
-/* animation */
-
-/* some features on mobile view */
-
-@media screen and (max-width: 536px) {
-
-    /* each section in index.html */
-    .container1, .about h1, #gly, #nb_1, #ab1, #ab2 {
-        font-family: "Times New Roman", Times, serif;
-    }
-
-    #gly {
-        font-size: 32px;
-    }
-
-    .social img {
-        position: relative;
-        width: 45%;
-        height: auto;
-        border-radius: 50%;
-        margin: 15px;
-        border-style: solid;
-        border-width: medium;
-        border-color: #FFFFFF;
-        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
-    }
-
-    .social {
-        padding-bottom: 10px;
-    }
-
-    .about h1 {
-        font-size: 24px;
-        padding: 10px;
-    }
-
-    .about {
-        height: auto;
-    }
-    #ab1,
-    #ab2 {
-        font-size: 16px;
-    } 
-
-    .container1 p {
-        font-size: 24px;
-        padding: 3px 12px;
-    }
-
-    .fixed-bg1, .fixed-bg2, .fixed-bg3 {
-        min-height: 600px;
-    }
-
-    #message{
-        margin: auto;
-        width: 80%;
-        max-width: 450px;
-    }
-
-    .earth {
-        display: none !important;
-    }
-
-    #p1 {
-        width: 10%;
-        overflow: hidden;
-        height: 100%;
-    }
-
-    #p2 {
-        width: 65%;
-        overflow: visible;
-        height: 100%;
-    }
-
-    #p3 {
-        width: 10%;
-        overflow: hidden;
-        height: 100%;
-    }
-
-    div .container {
-        max-height: 600px;
-    }
-
-}
-

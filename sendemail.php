@@ -1,31 +1,5 @@
 <?php
-/*
-     require_once 'Mail.php';
-     function send_mail($recipient,$subject,$body){
-
-            $host = "yourmailserver.net"; 
-            $username = "you@yourmailserver.net";
-            $password = "password";
-            $port = 25; 
-
-            $headers = array ('From' => "Your agent <noreply@yoursite.net>",
-              'To' => $recipient,
-              'Subject' => $subject
-            );  
-
-            $smtp = Mail::factory(
-             'smtp',
-              array ('host' => $host,
-                'auth' => true,
-                'port' => $port,
-                'username' => $username,
-                'password' => $password)
-            );  
-            $smtp->send($recipient, $headers, $body);
-       }
-*/
-
-$to = "bluehyemaggie@gmail.com";
+$to = "maggie_luhui@hotmail.com";
 $subject = "Message From ResumePage";
 $name_field = $_POST['name'];
 $email_field = $_POST['email'];
